@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFEFEF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.example.app.PiChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="80%"
+        android:layout_centerInParent="true"
+    />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/chart">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/triangle"
+            />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="imooc"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

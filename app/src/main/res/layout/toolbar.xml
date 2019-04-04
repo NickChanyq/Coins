@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    app:titleTextColor="@color/whrite"
+    android:id="@+id/tool_bar"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whrite"
+        android:text="CoCoin"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btn_menu"
+        android:src="@mipmap/ic_menu"
+        android:background="@color/colorPrimaryDark"
+        />
+</android.support.v7.widget.Toolbar>
+</LinearLayout>
